@@ -7,7 +7,7 @@ Brest, Republic of Belarus
 &#128386; ihar.hres@mail.ru
 &#9742; +375295276550
 
-GitHub **Ihaaar** (https://github.com/Ihaaar)
+GitHub **Ihaaar**
 
 Discord **Ihar Hres**
 
