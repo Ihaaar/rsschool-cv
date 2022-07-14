@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ihar Hres CV</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="picture/logo.ico" />
+    <link rel="icon" href="img/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,49 +15,52 @@
     />
   </head>
   <body>
-    <h1>CV</h1>
     <header class="header">
-      <div class="container"></div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#contacts" class="nav-link">Contacts</a>
-          </li>
-          <li class="nav-item">
-            <a href="#summary" class="nav-link">Summary</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skils" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#courses" class="nav-link">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a href="#education" class="nav-link">Education</a>
-          </li>
-          <li class="nav-item">
-            <a href="#language" class="nav-link">Language</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <nav class="nav collapsed">
+          <ul class="nav-list collapsed">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#language" class="nav-link">Language</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle collapsed">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
     </header>
-    <main class="main-container">
-      <div class="container">
-        <section class="section" id="profile">
-          <img
-            src="picture/IMG0.jpg"
-            alt="photo"
-            width="250px"
-            height="250px"
-          />
-          <h1 class="section-title">Ihar Hres - Junion Front-end Developer</h1>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section section-profile" id="profile">
+          <img src="img/IMG0.jpg" alt="photo" width="250px" height="250px" />
+          <div class="section-profile-title">
+            <h1 class="section-title main-title">Ihar Hres</h1>
+            <h3 class="section-subtitle">Junion Front-end Developer</h3>
+          </div>
         </section>
         <section class="section" id="contacts">
           <h2 class="section-title">Contacts</h2>
-          <ul>
+          <ul class="section-list">
             <li>
               <img
-                src="picture/mobile.png"
+                src="img/mobile.png"
                 alt="mobile"
                 width="15px"
                 height="15px"
@@ -65,26 +68,21 @@
               +375295276550
             </li>
             <li>
-              <img
-                src="picture/mail.png"
-                alt="mail"
-                width="15px"
-                height="15px"
-              />
+              <img src="img/mail.png" alt="mail" width="15px" height="15px" />
               ihar.hres@mail.ru
             </li>
             <li>
               <img
-                src="picture/github.png"
+                src="img/github.png"
                 alt="github"
                 width="15px"
                 height="15px"
               />
-              Ihaar
+              Ihaaar
             </li>
             <li>
               <img
-                src="picture/discord.png"
+                src="img/discord.png"
                 alt="discord"
                 width="15px"
                 height="15px"
@@ -103,7 +101,7 @@
         </section>
         <section class="section" id="skills">
           <h2 class="section-title">Skills</h2>
-          <ul>
+          <ul class="section-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>JS</li>
@@ -112,22 +110,22 @@
         </section>
         <section class="section" id="courses">
           <h2 class="section-title">Courses</h2>
-          <ul>
-            RS School «JavaScript/Front-end. Stage 0»
+          <ul class="section-list">
+            <li>RS School «JavaScript/Front-end. Stage 0»</li>
           </ul>
         </section>
-        <section class="section" id="education">
+        <section class="section section-education" id="education">
           <h2 class="section-title">Education</h2>
-          <ul>
+          <ul class="section-list">
             <li>
               BrGU n. A.S. Pushkina, Brest, Republic of Belarus
               (09.2007-07.2012)
             </li>
           </ul>
         </section>
-        <section class="section" id="language">
-          <h2 class="section title">Language</h2>
-          <ul>
+        <section class="section section-language" id="language">
+          <h2 class="section-title">Language</h2>
+          <ul class="section-list">
             <li>English - A2</li>
             <li>Polish - A2</li>
             <li>Ukrainian - A2</li>
@@ -137,7 +135,20 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container footer-container">
+        <div>
+          © 2022
+          <a
+            href="https://github.com/Ihaaar"
+            class="github nav-link"
+            target="_blank"
+            >Ihaaar</a
+          >
+        </div>
+        <a href="https://rs.school/js/" class="rss" target="_blank">
+          <img src="img/rslogo.svg" alt="rslogo" width="100px" height="100px" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
