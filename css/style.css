@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: midnightblue;
+}
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 50px 50px;
+  border-bottom: 5px solid grey;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.main {
+  margin-bottom: auto;
+}
+main {
+  display: block;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section {
+  width: calc(50% - 20px);
+  padding: 10px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid grey;
+}
+.section-title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-profile {
+  width: 100%;
+}
+.header {
+  background-color: lightblue;
+  position: sticky;
+  top: 0px;
+}
+.footer {
+  background-color: lightblue;
+  padding: 0 15px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: midnightblue;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  position: relative;
+  color: midnightblue;
+}
+.section-list {
+  list-style: none;
+}
+.section-education,
+.section-language {
+  border-bottom: 0;
+}
+.toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+  z-index: 15;
+}
+.toggle div {
+  width: 80%;
+  height: 2px;
+  background: grey;
+  margin: 3px 0;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .section-education {
+    border-bottom: 2px solid grey;
+  }
+  .nav {
+    display: none;
+  }
+  .toggle {
+    display: flex;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
